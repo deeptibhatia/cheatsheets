@@ -14,3 +14,8 @@
 
       * cat path/to/infile | openssl base64 | tr -d '\n' | pbcopy
 
+
+### Using gnu parallel
+
+   * cat path/to/infile | parallel --jobs 4 --colsep '/' /path/to/job/to/be/run/in/parallel {1} {2} 
+        * In the above command, change the column separator and number of arguments to be passed {1} {2} ... as applicable
