@@ -17,5 +17,7 @@
 
 ### Using gnu parallel
 
-   * cat path/to/infile | parallel --jobs 4 --colsep '/' /path/to/job/to/be/run/in/parallel {1} {2} 
-        * In the above command, change the column separator and number of arguments to be passed {1} {2} ... as applicable
+* In the command below, change the column separator used in the input file, and the number of arguments to be passed {1} {2} ... as applicable
+
+      * cat path/to/infile | parallel --jobs 4 --colsep '/' /path/to/job/to/be/run/in/parallel {1} {2} 
+   
